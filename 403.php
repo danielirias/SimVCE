@@ -101,7 +101,7 @@
                     } );
                 },
                 "language": {
-                    "search": "Buscarx:"
+                    "search": "Buscar:"
                 }
             } );
 
