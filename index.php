@@ -31,7 +31,7 @@
 						<!--Page Title-->
 						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 						<div id="page-title">
-							<h1 class="page-header text-overflow"><?php echo $_SESSION["APP_NAME"]; ?></h1>
+							<h1 class="page-header text-overflow-x"><?php echo $_SESSION["APP_NAME"]; ?></h1>
 						</div>
 						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 						<!--End page title-->
