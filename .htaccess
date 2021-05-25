@@ -1,24 +1,23 @@
-# El siguiente código evita que el archivo .htaccess puedan ser leído directamente desde el navegador web.
+# El siguiente código evita que el archivo .htaccess pueda ser leído directamente desde el navegador web.
 <Files .htaccess>
 	Order allow,deny
 	Deny from all
 </Files>
 
-# First up, we want to add an X-Security Header to help protect against XSS. To do so, add the following directive to your site's root .htaccess file:
 # X-XSS-Protection
 <IfModule mod_headers.c>
 	Header set X-XSS-Protection "1; mode=block"
 </IfModule>
 
 # Protect against page-framing and click-jacking
-# Next, we want to add an X-Security Header to help protect against page-framing and clickjacking. To do so, add the following directive to your site's root .htaccess file:
+# Agrego un encabezado para proteger contra Page-Framing y Click-Jacking
 # X-Frame-Options
 <IfModule mod_headers.c>
 	Header always append X-Frame-Options SAMEORIGIN
 </IfModule>
 
 # Protect against content-sniffing
-# Last but not least, we want to add an X-Security Header to help protect against content-sniffing. To do so, add the following directive to your site's root .htaccess file:
+# Agrego un encabezado para proteger contra sniffing
 # X-Content-Type nosniff
 <IfModule mod_headers.c>
 	Header set X-Content-Type-Options nosniff
