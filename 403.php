@@ -43,7 +43,7 @@
                                         <span class="text-primary" style="font-size: 86px; font-weight: bolder;">403</span>
                                         <div class="clearfix"></div>
                                         <h2 class="text-muted">
-                                            Acceso denegado.
+                                            Acceso denegado. no no
                                         </h2>
                                     </div>
                                     <div class="panel-footer">
