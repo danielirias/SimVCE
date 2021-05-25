@@ -80,7 +80,6 @@ function sendCenterInfo()
         //Cuando se completa la petición, mostrará los resultados
         if (ajax.readyState == 4)
         {
-            //El método responseText() contiene el texto de nuestro 'consultar.php'. Por ejemplo, cualquier texto que mostremos por un 'echo'
             //resultado.value = (ajax.responseText)
         }
     }
@@ -219,7 +218,6 @@ function addMERMember()
         //Cuando se completa la petición, mostrará los resultados
         if (ajax.readyState == 4)
         {
-            //El método responseText() contiene el texto de nuestro 'consultar.php'. Por ejemplo, cualquier texto que mostremos por un 'echo'
             //resultado.value = (ajax.responseText)
         }
     }
@@ -253,7 +251,6 @@ function dropMember(prmMember, memberDNI)
                 //Cuando se completa la petición, mostrará los resultados
                 if (ajax.readyState == 4)
                 {
-                    //El método responseText() contiene el texto de nuestro 'consultar.php'. Por ejemplo, cualquier texto que mostremos por un 'echo'
                     //resultado.value = (ajax.responseText)
                 }
             }
@@ -284,7 +281,6 @@ function createActionLog(actionID)
         //Cuando se completa la petición, mostrará los resultados
         if (ajax.readyState == 4)
         {
-            //El método responseText() contiene el texto de nuestro 'consultar.php'. Por ejemplo, cualquier texto que mostremos por un 'echo'
             //resultado.value = (ajax.responseText)
         }
     }
@@ -595,7 +591,6 @@ function addPersonVoting() {
         //Cuando se completa la petición, mostrará los resultados
         if (ajax.readyState == 4)
         {
-            //El método responseText() contiene el texto de nuestro 'consultar.php'. Por ejemplo, cualquier texto que mostremos por un 'echo'
             //resultado.value = (ajax.responseText)
         }
     }
