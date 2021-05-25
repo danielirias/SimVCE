@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="home427533652.1and1-data.host" id="aaa548e9-def6-44f6-b46a-113997591af7" port="22" customName="ELECTORAL" nameFormat="CUSTOM" username="u70015028-adminftp" />
+    </configs>
+  </component>
+</project>

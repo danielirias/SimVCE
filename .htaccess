@@ -1,0 +1,43 @@
+# El siguiente código evita que el archivo .htaccess puedan ser leído directamente desde el navegador web.
+<Files .htaccess>
+	Order allow,deny
+	Deny from all
+</Files>
+
+# First up, we want to add an X-Security Header to help protect against XSS. To do so, add the following directive to your site's root .htaccess file:
+# X-XSS-Protection
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Protect against page-framing and click-jacking
+# Next, we want to add an X-Security Header to help protect against page-framing and clickjacking. To do so, add the following directive to your site's root .htaccess file:
+# X-Frame-Options
+<IfModule mod_headers.c>
+	Header always append X-Frame-Options SAMEORIGIN
+</IfModule>
+
+# Protect against content-sniffing
+# Last but not least, we want to add an X-Security Header to help protect against content-sniffing. To do so, add the following directive to your site's root .htaccess file:
+# X-Content-Type nosniff
+<IfModule mod_headers.c>
+	Header set X-Content-Type-Options nosniff
+</IfModule>
+
+# El siguiente código está diseñado para comprimir el código de salida CSS, JavaScript, XML y de texto antes de ser mostrado en el navegador.
+# La idea básica es ahorrar tiempo en la carga y no consumir tanto ancho de banda.
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/x-javascript
+
+#Cookies
+Header always edit Set-Cookie ^(.*)$ $1;SameSite=None;Secure
+
+#------------ ERROR DOCUMENTS ------------
+# Acceso denegado
+ErrorDocument 403 /403.php
+
+# Recurso no existente
+ErrorDocument 404 /404.php
+
+
+
+
